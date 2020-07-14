@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <!-- button colour, tab indicators selected colour -->
+    <color name="appPurple">#651583</color>
+    <!-- app background colour -->
+    <color name="appBackground">#f8f4f8</color>
+    <!-- app white colour -->
+    <color name="appWhite">#ffffff</color>
+    <!-- app default indicators colour -->
+    <color name="defaultIndicators">#c4c4c4</color>
+    <!-- app skip text and forward button background  colour -->
+    <color name="skipText">#d4d1d4</color>
+    <color name="nextText">#202020</color>
+</resources>
