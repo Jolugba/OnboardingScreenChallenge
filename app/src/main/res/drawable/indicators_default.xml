@@ -5,7 +5,7 @@
             android:innerRadius="0dp"
             android:useLevel="false"
             android:thickness="4dp">
-            <solid android:color="@color/appBackground"/>
+            <solid android:color="@color/defaultIndicators" />
 
         </shape>
     </item>

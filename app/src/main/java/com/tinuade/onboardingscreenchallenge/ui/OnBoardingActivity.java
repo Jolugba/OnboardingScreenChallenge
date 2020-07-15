@@ -141,6 +141,8 @@ public class OnBoardingActivity extends AppCompatActivity {
         binding.view.setVisibility(View.VISIBLE);
         binding.tabIndicators.setVisibility(View.VISIBLE);
         binding.skipText.setVisibility(View.VISIBLE);
+        nextButton.setTextSize(14);
+        nextButton.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
 
     }
 

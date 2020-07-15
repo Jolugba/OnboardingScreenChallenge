@@ -17,6 +17,7 @@
         android:textAlignment="textStart"
         android:textAllCaps="false"
         android:textColor="@color/nextText"
+        android:textStyle="normal"
         app:cornerRadius="20dp"
         app:rippleColor="@color/appPurple">
 
