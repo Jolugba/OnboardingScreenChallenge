@@ -10,4 +10,5 @@
     <string name="three_screen_text">Let\'s maintain your focus by meditating every\nday without hassle</string>
     <string name="get_started_button">Get started</string>
     <string name="toast_message">Yay,you\'ve gotten to the end</string>
+    <string name="skip_toast_message">oops, no where to go,scroll till it ends</string>
 </resources>

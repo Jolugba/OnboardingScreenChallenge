@@ -80,7 +80,7 @@ public class OnBoardingActivity extends AppCompatActivity {
         binding.skipText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast=Toast.makeText(OnBoardingActivity.this,"oops, no where to go,scroll till it ends",Toast.LENGTH_SHORT);
+                Toast toast=Toast.makeText(OnBoardingActivity.this, R.string.skip_toast_message,Toast.LENGTH_SHORT);
                 toast.show();
             }
         });
