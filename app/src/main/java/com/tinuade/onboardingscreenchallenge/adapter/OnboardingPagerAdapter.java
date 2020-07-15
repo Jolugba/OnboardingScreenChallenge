@@ -15,40 +15,48 @@ import com.tinuade.onboardingscreenchallenge.model.OnboardingListItems;
 
 import java.util.List;
 
-public class OnboardingItemAdapter extends PagerAdapter {
-    Context context;
-    List<OnboardingListItems> itemsList;
+public class OnboardingPagerAdapter extends PagerAdapter {
 
-    public OnboardingItemAdapter(Context context, List<OnboardingListItems> itemsList) {
+    private Context context;
+    private List<OnboardingListItems> list;
+
+    public OnboardingPagerAdapter(Context context, List<OnboardingListItems> list) {
         this.context = context;
-        this.itemsList = itemsList;
+        this.list = list;
     }
 
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View layoutScreen = inflater.inflate(R.layout.layout_screen, null);
+        LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        assert inflater != null;
+        View layoutScreen=inflater.inflate(R.layout.layout_screen,null);
 
+        ImageView imgSlide = layoutScreen.findViewById(R.id.onBoardingImage);
         TextView title = layoutScreen.findViewById(R.id.onboardingTitle);
         TextView description = layoutScreen.findViewById(R.id.onboardingDescription);
-        ImageView image = layoutScreen.findViewById(R.id.onBoardingImage);
 
-        title.setText(itemsList.get(position).getTitle());
-        description.setText(itemsList.get(position).getDescription());
-        image.setImageResource(itemsList.get(position).getImage());
+        title.setText(list.get(position).getTitle());
+        description.setText(list.get(position).getDescription());
+        imgSlide.setImageResource(list.get(position).getImage());
+
         container.addView(layoutScreen);
+
         return layoutScreen;
+
     }
 
+    /**
+     * Return the number of views available.
+     */
     @Override
     public int getCount() {
-        return itemsList.size();
+        return list.size();
     }
 
     @Override
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return view == object;
+        return view==object;
     }
 
     @Override

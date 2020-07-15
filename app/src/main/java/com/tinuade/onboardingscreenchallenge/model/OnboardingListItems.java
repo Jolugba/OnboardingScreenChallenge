@@ -15,11 +15,9 @@ public class OnboardingListItems {
     }
 
 
-
     public String getDescription() {
         return description;
     }
-
 
 
     public int getImage() {

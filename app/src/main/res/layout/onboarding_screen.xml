@@ -9,6 +9,17 @@
     tools:context=".ui.OnBoardingActivity">
 
 
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/nextButtonLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <include
         android:id="@+id/nextButtonLayout"
         layout="@layout/button_next"
@@ -20,20 +31,13 @@
 
     </include>
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_pager"
-        android:layout_width="0dp"
-        android:layout_height="511dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_indicators"
         android:layout_width="50dp"
-        android:layout_height="30dp"
+        android:layout_height="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
+        android:background="@color/appWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:tabBackground="@drawable/indicator_selector" />
@@ -44,11 +48,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:fontFamily="@font/merriweather"
+        android:fontFamily="@font/poppins_bold"
         android:text="@string/skip"
         android:textColor="@color/skipText"
         android:textIsSelectable="true"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
